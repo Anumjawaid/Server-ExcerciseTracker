@@ -21,6 +21,6 @@ mongoose.connect(`mongodb+srv://BismaRasheed:bisma@cluster0.pnt338c.mongodb.net/
 
 app.use('/', routes);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log(`server listening on ${process.env.PORT}`)
 })
